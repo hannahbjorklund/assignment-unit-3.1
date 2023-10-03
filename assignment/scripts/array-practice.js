@@ -70,7 +70,7 @@ console.log('Added an animal to end,', animalArray);
 //      array. (How can you be 100% certain this worked? 🤔)
 let dessert = 'tiramisu';
 favoriteFoods.push(dessert);
-console.log('Checking favorite foods:', favoriteFoods);
+console.log('Added a dessert to the end:', favoriteFoods);
 
 // Example: Add to the beginning of an array using the Array.unshift method.
 let animalToUnshift = 'walrus';
@@ -82,7 +82,7 @@ console.log(`Added an animal to beginning: ${animalArray}`);
 //      Add the `entree` to the beginning of your `favoriteFoods` array.
 let entree = 'ravioli';
 favoriteFoods.unshift(entree);
-console.log('Added an entree:', favoriteFoods);
+console.log('Added an entree to the beginning:', favoriteFoods);
 
 // Example: Remove the last animal by using the Array.pop method.
 let removedAnimal = animalArray.pop();
@@ -120,11 +120,14 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 
 // 5.a (STRETCH) TODO: Replace the second gem with 'Tourmaline'.
 //      Remember to console.log the updated array.
-
+gems[1] = 'Tourmaline';
+console.log("Replaced 2nd gem:", gems);
 
 // 5.b (STRETCH) TODO: Sort your gems array in reverse alphabetical order.
 //     Please console.log the sorted array.
-
+gems.sort();
+gems.reverse();
+console.log("Reverse alphabetical sort:", gems);
 
 // 5.c (STRETCH) TODO: Create a variable `gemString` and assign it a string value
 //     that's made up of each value from the `gems` array, but separated by the
@@ -133,16 +136,16 @@ let gems = ['Topaz', 'Citrine', 'Diamond', 'Emerald', 'Iolite', 'Tanzanite'];
 //       "Emerald and Diamond and Tourmaline and Topaz"
 //     🔥 You'll need to research the .join Array method. 🔥
 //     Don't forget to console.log `gemString`...
-
+let gemString = gems.join(' and ');
+console.log('Gems string:', gemString);
 
 // 5.d (STRETCH) TODO: Make a new array `colorfulGems` that combines 
 //     the gems array with the colors array.
 //     It should look something like:
 //       ['Tourmaline', 'Topaz', 'Tanzanite', 'Iolite', 'Emerald', 'Diamond', 'yellow', 'green']
 //     Now, console.log the new array.
-
-
-
+let colorfulGems = gems.concat(colors);
+console.log('Colorful gems:', colorfulGems);
 
 // DO NOT MODIFY
 // Used for automated testing
